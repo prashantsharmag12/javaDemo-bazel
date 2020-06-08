@@ -17,3 +17,13 @@ java_binary(
     
     
 )
+
+java_binary(
+    name = "todo",
+    srcs = ["Todo.java"],
+    main_class = "net.javaguides.todoapp.model.Todo",
+    visibility = ["//src/net/javaguides/todoapp/dao:__pkg__","//src/net/javaguides/todoapp/controller:__pkg__"],
+    
+    
+)
+

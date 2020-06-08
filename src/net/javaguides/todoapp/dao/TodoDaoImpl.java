@@ -1,14 +1,8 @@
 package net.javaguides.todoapp.dao;
 
 import java.lang.reflect.Array;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.time.LocalDate;
-import java.time.ZoneId;
-import java.time.format.DateTimeFormatter;
+
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -178,7 +172,7 @@ public class TodoDaoImpl implements TodoDao{
 		}
         return rowUpdated;
 	}*/
-	@Override
+	
 	public void insertTodoMongo(Todo newTodo) {
 		
 		System.out.println("in the insert mongo db");
@@ -200,7 +194,7 @@ public class TodoDaoImpl implements TodoDao{
 		
 		
 	}
-	@Override
+	
 	public Todo selectTodoMongo(String id) {
 		
 		
@@ -252,7 +246,7 @@ public class TodoDaoImpl implements TodoDao{
 		
 		return null;
 	}
-	@Override
+	
 	public List<Todo> selectAllTodosMongo(LoginBean login) {
 		
 		  MongoClient mongo = JDBCUtils.mongodbms();
@@ -318,7 +312,7 @@ public class TodoDaoImpl implements TodoDao{
 		
 		return todos;
 	}
-	@Override
+	
 	public boolean deleteTodoMongo(String id) {
 		
 		boolean deleted = false;
@@ -344,7 +338,7 @@ public class TodoDaoImpl implements TodoDao{
 		
 		return deleted;
 	}
-	@Override
+	
 	public boolean updateTodoMongo(Todo todo) {
 		
 		

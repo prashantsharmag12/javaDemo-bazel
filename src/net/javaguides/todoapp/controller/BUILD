@@ -16,3 +16,21 @@ java_binary(
     deps = ["//:servlet","//src/net/javaguides/todoapp/dao:userDao","//src/net/javaguides/todoapp/model:user"],
     
 )
+
+
+java_binary(
+    name = "todoController",
+    srcs = ["TodoController.java"],
+    main_class = "net.javaguides.todoapp.controller.TodoController",
+    deps = ["//:servlet",
+    "//src/net/javaguides/todoapp/dao:todoDao",
+    "//src/net/javaguides/todoapp/model:todo",
+    "//src/net/javaguides/todoapp/model:loginBean",
+     "//src/net/javaguides/todoapp/dao:todoImpl",
+    
+    
+    
+    
+    ],
+    
+)

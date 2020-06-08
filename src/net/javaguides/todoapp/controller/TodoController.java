@@ -1,7 +1,6 @@
 package net.javaguides.todoapp.controller;
 
 import java.io.IOException;
-import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.Enumeration;
